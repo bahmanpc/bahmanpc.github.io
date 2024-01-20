@@ -15,35 +15,43 @@ body{
     clear: both;
 }
 .logo{
+    color: rgb(44, 12, 73);
+    position: fixed;
+    text-align: right;
     float: right;
-    color: gold;
-
+    width: 10%;
+    height: 10%;
+    margin-left: 86%;
 }
 .menu{
-  display: block;
-    float: left;
-    font-size: 1.5rem;
+
+   float: left;
+    font-size: 1rem;
     font-weight: bold;
-color: #fff;
+    position: fixed;
+
 
 color: #000;
 }
 .menu ul {
-    position: absolute;
+  
     display: flex;
     gap: .6rem;
     list-style-type: none;
     background-color: transparent;
     overflow: hidden;
     margin-top: 20px;
-   
+   padding: 5px;
     color: #fff;
-   
+    position: absolute;
+  background: #0a1b39;
+  width: 15%;
+   height: 30%;
 }
 .menu a{
-    color: #000;
-    position: static;
-   
+    color: #eee;
+    border-radius: 5px;
+   padding: 5px;
     
     }
 ul {
@@ -71,7 +79,7 @@ ul {
 }
 .menu li{
     
-    background: gold;
+    background: rgb(62, 16, 16);
 }
 #click {
     display: none;
@@ -108,9 +116,9 @@ li a::after {
    
     width: 20%;
     height: 20%;
-    box-shadow: 0 0 25px red;
+    box-shadow: 0 0 35px red;
     border-radius: 50%;
-    border: 3px dotted rgb(255, 234, 1) ;
+    border: 3px dotted rgb(255, 106, 0) ;
 
 }
 .images video{
@@ -153,6 +161,7 @@ li a::after {
     margin-top: 40px;
     float: auto;
   margin-left: auto;
+  margin-right: 37px;
   width: 60%;
     height: 20%;
     margin-bottom: 40px;
@@ -173,11 +182,6 @@ background: none;
    border: 3px dotted rgb(255, 0, 0);
 
 }
-
-
- 
-
-
 
 
 .blue a{
