@@ -19,8 +19,8 @@ body{
 .logo{
     color: rgb(44, 12, 73);
   margin-top: 30px;
-  margin-left: 555px;
-    text-align: right;
+  margin-left: -70px;
+    text-align: left;
     float: right;
     
    
@@ -69,7 +69,8 @@ header {
 
 .menu {
 margin-top: 5px;
-margin-left: -785px;
+
+margin-left: -400px;
    float: left;
     font-size: 1rem;
     font-weight: bold;
@@ -81,7 +82,7 @@ color: #000;
 
 .menu ul {
    
-   
+   position: absolute;
    margin: auto;
    
 
@@ -149,9 +150,9 @@ color: #000;
 }
 .images img{
     margin-top: 110px;
-   margin-left: 50px;
-    width: 20%;
-    height: 20%;
+   margin-left: 70px;
+    width: 30%;
+    height: 30%;
     box-shadow: 0 0 30px red;
     border-radius: 50%;
     border: 3px dotted rgb(255, 106, 0) ;
@@ -161,9 +162,9 @@ color: #000;
     box-shadow: 0 0 25px red;
     border: 4px double rgb(255, 234, 1);
     margin-top: 70px;
-    margin-right: 10px;
-   width: 20%;
-   height: 20%;
+    margin-right: 30px;
+   width: 30%;
+   height: 30%;
    float: right;
    border-radius: 5%;
    padding-top: -30px;
@@ -179,7 +180,6 @@ color: #000;
     background: rgb(49, 9, 43);
   
     border: 5px dotted gold;
-    right: 30%;
     height: 30%;
 padding: 20px;
     color: #e4e4e4;
