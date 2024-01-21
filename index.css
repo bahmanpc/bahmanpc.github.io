@@ -22,7 +22,8 @@ body{
     margin-left: 86%;
 }
 .menu{
-
+margin-top: 20px;
+margin-left: 20px;
    float: left;
     font-size: 1rem;
     font-weight: bold;
@@ -35,21 +36,23 @@ color: #000;
 .menu ul {
     background: rgb(50, 18, 96);
     color: #fff;
-    padding: 5px;
-    overflow: hidden;
+    
+ padding: 5px;
+ position: absolute;
+ overflow: hidden;
     width: 100%;
     height: 25%;
    border-radius: 5px;
    gap: .6rem;
    list-style-type: none;
-   margin-left: 20px;
+  
     display: flex;
-    flex-direction: column;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 3.4rem;
-    left: -100%;
+   
+   
     z-index: 111111;
 }
 .menu li{
@@ -72,7 +75,7 @@ a::after {
     height: 5px;
     width: 0;
     left: 0;
-    bottom: -8px;
+    bottom: 0px;
     transition: all 0.5s ease;
     }
     a:hover::after {
