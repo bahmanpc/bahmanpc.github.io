@@ -9,9 +9,9 @@
 body{
 
     background:  rgb(0, 183, 255);
-width: 200%;
-height: 200%;
-    color: #fff;
+width: auto;
+height: auto;
+
 
 
 }
@@ -78,7 +78,7 @@ margin-top: 20px;
    margin-left: 10px;
     font-size: 1rem;
     font-weight: bold;
-    position: relative;
+    position: absolute;
   
 color: #000;
 }
@@ -89,7 +89,7 @@ color: #000;
 position: absolute;
   
    margin-top: 5px;
-   margin-left: -20px;
+   margin-left: -25px;
 
 
  overflow: hidden;
@@ -109,32 +109,35 @@ position: absolute;
 }
 .menu li{
     list-style: none;
-   position: static;
-    padding: 3px ;
-
+   position: relative;
+    padding: 0 5px ;
+    letter-spacing: 0.5px;
 }
 .menu a{
     color: #000000;
+
     border-radius: 5px;
-   padding: 5px;
+   padding: 5px 0;
    font-size: 15px;
    text-decoration: none;
    
     }
 
 
-.menu a::after {
+li::after {
     content: "";
-   
+    position: absolute;
+    
     background-color: rgb(94, 154, 228);
     height: 5px;
     width: 0;
     left: 0;
-    bottom: 3px;
+   
+    bottom: -3px;
     transition: all 0.5s ease;
     }
-  .menu a:hover::after {
-    
+  li:hover::after {
+    width: 100%;
         background-color: rgb(255, 0, 0);
       
     }
@@ -183,7 +186,7 @@ position: absolute;
 
     background: rgb(49, 9, 43);
   
-    border: 5px dotted gold;
+    border: 5px dashed gold;
     height: 30%;
 padding: 20px;
     color: #e4e4e4;
@@ -193,7 +196,7 @@ padding: 20px;
 direction: rtl;
     line-height: 1.5;
 font-size: large;
-margin-left: 20px;
+margin-left: 10px;
 }
 .e1{
     text-align: left;
