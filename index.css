@@ -19,10 +19,11 @@ body{
 }
 .logo{
     color: rgb(44, 12, 73);
-  margin-top: 30px;
-  margin-left: 130px;
+    position: fixed;
+  margin-top: 5px;
+  margin-left: 80%;
     text-align: left;
-    float: auto;
+    float: left;
     animation: leftSideAni 1s ease forwards;
   
 }
@@ -36,23 +37,25 @@ body{
 
 .container {
     padding: 0 8.4rem;
-    background-color: rgb(234, 255, 0);
+    background: rgb(255, 230, 0);
     border-radius: 7px;
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border: 5px double #33383C;
-   width: 30%;
-   height: 10%;
+   width: 20%;
+   height: 7%;
    margin: auto;
+   float: left;
+   margin-left: 32%;
  
 }
 
 
 header {
     background: var(--primary-color);
-    position: relative;
+    position: fixed;
     box-shadow: 0 4px 17px rgb(255, 0, 0);
-    position: sticky;
+   
     top: 0;
     z-index: 1;
   
@@ -69,37 +72,34 @@ header {
 }
 
 .menu {
-margin-top: 10px;
 
-margin-left: -360px;
-   
+margin-top: 20px;
+   margin-left: 10px;
     font-size: 1rem;
     font-weight: bold;
-    position: fixed;
+    position: relative;
   
 color: #000;
 }
 
 
 .menu ul {
-position: relative;
-   margin: auto;
+  
+position: absolute;
+  
    margin-top: 5px;
-   margin-left: -10px;
+   margin-left: -20px;
 
-
-    padding: 0;
 
  overflow: hidden;
-    width: 360px;
-    height: 25%;
+   
+
    border-radius: 5px;
    gap: .6rem;
    list-style-type: none;
-  
-    display: flex;
+ 
     
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
    
@@ -109,7 +109,7 @@ position: relative;
 .menu li{
     list-style: none;
    position: static;
-    padding: 3px -1px ;
+    padding: 3px ;
 
 }
 .menu a{
@@ -121,12 +121,10 @@ position: relative;
    
     }
 
-    .menu ul::after{
-        position: relative;
-    }
-a::after {
+
+.menu a::after {
     content: "";
-    position: relative;
+   
     background-color: rgb(94, 154, 228);
     height: 5px;
     width: 0;
@@ -135,8 +133,8 @@ a::after {
     transition: all 0.5s ease;
     }
   .menu a:hover::after {
-        width: 100%;
-        background: rgb(255, 0, 0);
+    
+        background-color: rgb(255, 0, 0);
       
     }
     
@@ -148,9 +146,7 @@ a::after {
 #click {
     display: none;
 }
-.menu:hover{
-    color: rgb(125, 11, 11);
-}
+
 
 #click {
     display: none;
