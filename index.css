@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
 
 :root {
     --primary-color: #33383C;
@@ -19,11 +21,11 @@ body{
 .logo{
     color: rgb(44, 12, 73);
   margin-top: 30px;
-  margin-left: -70px;
+  margin-left: 250px;
     text-align: left;
-    float: right;
-    
-   
+    float: auto;
+    animation: leftSideAni 1s ease forwards;
+  
 }
 
 
@@ -49,7 +51,7 @@ body{
 
 header {
     background: var(--primary-color);
-    position: fixed;
+    position: relative;
     box-shadow: 0 4px 17px rgb(255, 0, 0);
     position: sticky;
     top: 0;
@@ -68,10 +70,10 @@ header {
 }
 
 .menu {
-margin-top: 5px;
+margin-top: 10px;
 
-margin-left: -400px;
-   float: left;
+margin-left: -500px;
+   
     font-size: 1rem;
     font-weight: bold;
     position: fixed;
@@ -81,10 +83,10 @@ color: #000;
 
 
 .menu ul {
-   
-   position: absolute;
+
    margin: auto;
-   
+   margin-top: 5px;
+background-color: rgb(27, 15, 61);
 
     padding: 1px 1px 1px 5px;
 
@@ -106,31 +108,36 @@ color: #000;
 }
 .menu li{
     list-style: none;
-   position: relative;
-    padding: 10px;
+   position: static;
+    padding: 5px;
 
 }
 .menu a{
-    color: #000;
+    color: #ffffff;
     border-radius: 5px;
    padding: 5px;
    font-size: 15px;
    text-decoration: none;
    
     }
-.menu a::after {
+
+    .menu ul::after{
+        position: relative;
+    }
+a::after {
     content: "";
-    position: absolute;
+    position: relative;
     background-color: rgb(94, 154, 228);
     height: 5px;
     width: 0;
     left: 0;
-    bottom: 5px;
+    bottom: 3px;
     transition: all 0.5s ease;
     }
   .menu a:hover::after {
         width: 100%;
         background: rgb(255, 0, 0);
+      
     }
     
 
@@ -189,6 +196,7 @@ padding: 20px;
 direction: rtl;
     line-height: 1.5;
 font-size: large;
+margin-left: 20px;
 }
 .e1{
     text-align: left;
