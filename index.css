@@ -21,7 +21,7 @@ body{
 .logo{
     color: rgb(44, 12, 73);
   margin-top: 30px;
-  margin-left: 250px;
+  margin-left: 50px;
     text-align: left;
     float: auto;
     animation: leftSideAni 1s ease forwards;
@@ -86,12 +86,13 @@ color: #000;
 
    margin: auto;
    margin-top: 5px;
-background-color: rgb(27, 15, 61);
+   margin-left: -10px;
 
-    padding: 1px 1px 1px 5px;
+
+    padding: 0;
 
  overflow: hidden;
-    width: 100%;
+    width: 360px;
     height: 25%;
    border-radius: 5px;
    gap: .6rem;
@@ -109,11 +110,11 @@ background-color: rgb(27, 15, 61);
 .menu li{
     list-style: none;
    position: static;
-    padding: 5px;
+    padding: 3px -1px ;
 
 }
 .menu a{
-    color: #ffffff;
+    color: #000000;
     border-radius: 5px;
    padding: 5px;
    font-size: 15px;
