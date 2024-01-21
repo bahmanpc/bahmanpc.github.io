@@ -21,14 +21,22 @@ body{
     height: 10%;
     margin-left: 86%;
 }
-.menu{
+
+
+
+#click {
+    display: none;
+}
+
+
+.menu {
 margin-top: 20px;
 margin-left: 20px;
    float: left;
     font-size: 1rem;
     font-weight: bold;
     position: fixed;
-   
+  
 color: #000;
 }
 
@@ -36,8 +44,10 @@ color: #000;
 .menu ul {
     background: rgb(50, 18, 96);
     color: #fff;
-    
- padding: 5px;
+   margin: auto;
+   
+
+    padding: 1px 1px 1px 5px;
  position: absolute;
  overflow: hidden;
     width: 100%;
@@ -100,7 +110,7 @@ a::after {
 }
 .images img{
     margin-top: 100px;
-   
+   margin-left: 30px;
     width: 20%;
     height: 20%;
     box-shadow: 0 0 30px red;
@@ -119,7 +129,7 @@ a::after {
    padding-top: -30px;
 }
 .m1{
-    margin-left: 150px;
+    margin-left: 80px;
     color: #000;
 }
 .m2{
@@ -162,7 +172,7 @@ font-size: large;
     margin: 5px;
   padding: 18px;
   border-radius: 50%;
-  border: 5px double #ffffff;
+  border: 5px double #fff;
 }
 
 .social a:hover{
