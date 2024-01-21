@@ -9,8 +9,7 @@
 body{
 
     background:  rgb(0, 183, 255);
-    width: 100%;
-    height: 100%;
+
     color: #fff;
 
 
@@ -83,7 +82,7 @@ color: #000;
 
 
 .menu ul {
-
+position: relative;
    margin: auto;
    margin-top: 5px;
    margin-left: -10px;
