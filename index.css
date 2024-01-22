@@ -13,13 +13,65 @@ body{
 width: auto;
 height: auto;
 
-
-
 }
+
+.div{
+    justify-content: space-around;
+    display: flex;
+    height: 4rem;
+    width: 40%;
+   position: absolute;
+ }
+ .div i{
+    padding-top: 17px;
+    font-size: 2rem;
+    color: aliceblue;
+ }
+ .btn{ 
+    margin: 1rem;
+    font-size: 1rem;
+    padding: .6rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14,14,26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0 0 60px #1f4c65;
+    -webkit-box-reflect: below 10px
+     linear-gradient(to bottom,
+     rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+ }
+ 
+ li{
+    list-style: none;
+    padding: 0;
+ }
+ .btn:active{
+    scale: 0.92;
+ }
+ 
+ .btn:hover{
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg,
+     rgba(2, 29, 78, 0.681) 0%,
+     rgba(31, 215, 232, 0.873) 60%);
+     color: rgb(4, 4, 38);
+ }
+
 .clear{
     clear: both;
 }
 .logo{
+    background: gold;
+    border: 3px double #000;
+    border-radius: 20px 3px ;
+    padding-right: 10px;
+    padding-left: 10px;
+  
     color: rgb(44, 12, 73);
     position: fixed;
   margin-top: 5px;
@@ -41,112 +93,6 @@ width: 100px;
 }
 
 
-.container {
-    padding: 0 8.4rem;
-    background: rgb(255, 230, 0);
-    border-radius: 7px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border: 5px double #33383C;
-   width: 7%;
-   height: 4%;
-   margin: auto;
-   float: left;
-   margin-left: 32%;
- 
-}
-
-
-header {
-    background: var(--primary-color);
-    position: fixed;
-    box-shadow: 0 4px 17px rgb(255, 0, 0);
-   
-    top: 0;
-    z-index: 1;
-  
-}
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 0;
-    margin-bottom: 10px;
-    margin-top: -50px;
-    
-}
-
-.menu {
-
-margin-top: 20px;
-   margin-left: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    position: fixed;
-  
-color: #000;
-}
-
-
-.menu ul {
-  
-position: absolute;
-  
-   margin-top: 5px;
-   margin-left: -25px;
-
-
- overflow: hidden;
-   
-
-   border-radius: 5px;
-   gap: .6rem;
-   list-style-type: none;
- 
-    
-    display: block;
-    align-items: center;
-    justify-content: center;
-   
-   
-    z-index: 111111;
-}
-.menu li{
-    list-style: none;
-   position: relative;
-    padding: 0 5px ;
-    letter-spacing: 0.5px;
-}
-.menu a{
-    color: #000000;
-
-    border-radius: 5px;
-   padding: 5px 0;
-   font-size: 15px;
-   text-decoration: none;
-   
-    }
-
-
-li::after {
-    content: "";
-    position: absolute;
-    
-    background-color: rgb(40, 120, 218);
-    height: 5px;
-    width: 0;
-    left: 3px;
-   right: 0;
-    bottom: -3px;
-    transition: all 0.5s ease;
-    }
-  li:hover::after {
-    width: 90%;
-        background-color: rgb(255, 0, 0);
-      
-    }
-    
 
 #click:checked~ul {
     left: 0%;
@@ -199,7 +145,7 @@ li::after {
     color: #000;
 }
 .m2{
-    box-shadow: 0 0 15px rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(238, 255, 0);
     background: rgb(49, 9, 43);
   
     border: 5px dashed gold;
@@ -216,7 +162,7 @@ margin-left: 15px;
 }
 
 .m2:hover{
-    box-shadow: 0 0 25px rgb(251, 255, 0);  
+    box-shadow: 0 0 25px rgb(255, 0, 0);  
 }
 
 .e1{
