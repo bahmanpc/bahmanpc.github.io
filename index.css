@@ -91,31 +91,24 @@ margin-left: -10px;
 width: 100px;
 }
 
-#click {
-    display: none;
-}
-
 
 
 #click:checked~ul {
     left: 0%;
     transition: all 0.3s ease;
 }
-#click {
-    display: none;
-}
-
 
 #click {
     display: none;
 }
+
 .images img{
     margin-top: 150px;
     margin-bottom: -30px;
    margin-left: 100px;
     width: 30%;
     height: 30%;
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 15px red;
     border-radius: 50%;
     border: 1px solid rgb(230, 246, 58) ;
 
@@ -123,8 +116,10 @@ width: 100px;
 
 .images img:hover{
     box-shadow:  0 0 25px red;
+ 
 
 }
+
 .images video{
     box-shadow: 0 0 25px red;
     border: 4px double rgb(255, 234, 1);
@@ -147,8 +142,9 @@ width: 100px;
    
     color: #000;
 }
+
 .m2{
-    box-shadow: 0 0 15px rgb(238, 255, 0);
+    box-shadow: 0 0 15px rgb(255, 0, 0);
     background: rgb(49, 9, 43);
   
     border: 5px dashed gold;
@@ -162,6 +158,7 @@ direction: rtl;
     line-height: 1.5;
 font-size: large;
 margin-left: 15px;
+border-top-left-radius: 40px;
 }
 
 .m2:hover{
