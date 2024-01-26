@@ -1,63 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
 
-:root {
-    --primary-color: #33383C;
+
+*{
+
+    box-sizing: border-box;
 }
 
+
+:root{
+    --bgColor: #152533;
+
+}
 
 body{
-
+ 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background:  linear-gradient(160.5deg,
-     rgb(0, 183, 255) 50%, #400909 50%);
-width: auto;
-height: auto;
-
+  rgb(0, 183, 255) 50%, #400909 50%);
+  width: auto;
+  height: auto;
 }
 
-.div{
-    justify-content: space-around;
-    display: flex;
-    height: 4rem;
-    width: 50%;
-   position: absolute;
+.card {
+position: relative;
 
+    transition: 0.5s;
+    height: 100px;
+}
+
+.card .user{
+    margin-top: 50px;
+    display: flex;
+   position: fixed;
+   gap: 10px;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 300px;
+   min-height: 150px;
+gap: 10px;
+border-radius: 10px;
+padding: 60px 40px 10px;
+}
+
+
+.card .user .content{
+   
+        position: relative;
+        text-align: center;
+        width: 250px;
+     margin-bottom: 20px;
+
+    }
  
- }
- .div i{
-    padding-top: 17px;
-    font-size: 2rem;
-    color: aliceblue;
- }
- .btn{ 
-    margin-top: 10px;
-    margin-left: 20px;
-    font-size: 1rem;
-    padding: .5rem 1.2rem;
+
+ .card .user .content h3{ 
+   margin-top: -60px;
+    font-size: 1.2rem;
+    padding: 60px 10px 30px 10px;
     border: none;
     outline: none;
     border-radius: 0.4rem;
     cursor: pointer;
-    text-transform: uppercase;
     background-color: rgb(14,14,26);
     color: rgb(234, 234, 234);
     font-weight: 700;
     transition: 0.6s;
-    box-shadow: 0 0 60px #1f4c65;
-    -webkit-box-reflect: below 10px
-     linear-gradient(to bottom,
-     rgba(0,0,0,0.0), rgba(0,0,0,0.4));
- }
+}
  
- li{
-    list-style: none;
 
- }
- .btn:active{
+ .card .user .content h3:active{
     scale: 0.92;
  }
  
- .btn:hover{
+ .card .user .content h3:hover{
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(2, 29, 78, 0.681) 0%,
@@ -65,30 +84,236 @@ height: auto;
      color: rgb(4, 4, 38);
  }
 
+
+.card .user .imgBx{
+position: absolute;
+top: 0;
+transform: translateY(-30%);
+height: 80px;
+width: 80px;
+border-radius: 50%;
+border: 5px solid #000000;
+overflow: hidden;
+z-index: 10;
+
+}
+
+.card .user .imgBx:hover{
+    border: 5px dashed rgb(57, 48, 3);
+    border: 5px dashed linear-gradient(270deg,
+     rgb(255, 255, 255) 0%,
+     rgba(0, 255, 17, 0.766) 60%);
+     color: rgb(4, 4, 38);
+     box-shadow: 0 0 60px #06eaffe4;
+-webkit-box-reflect: below 50px
+ linear-gradient;
+}
+
+
+.card .user .imgBx img{
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+.card .user .toggle{
+    position: relative;
+    bottom: 0;
+  margin-top: -75px;
+    background: #000000;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transform: translateY(50%);
+    border: 2px dotted #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.card .user .toggle:hover{
+
+background: rgb(2, 29, 78);
+background: linear-gradient(270deg,
+ rgba(0, 60, 172, 0.731) 0%,
+ rgba(0, 255, 17, 0.766) 60%);
+ color: rgb(4, 4, 38);
+}
+
+.card .user .toggle::before{
+content: "Open ▼";
+
+color: #ffffff;
+}
+
+.card.active{
+    height: 450px;
+}
+
+.card.active .user .toggle{
+    background: #000000;
+   
+}
+
+.card.active .user .toggle:hover{
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg,
+     rgba(0, 60, 172, 0.731) 0%,
+     rgba(255, 0, 0, 0.766) 60%);
+     color: rgb(4, 4, 38);
+}
+
+.card.active .user .toggle::before{
+content: "Close ▲";
+}
+
+.card .contact{
+    
+   text-align: center;
+    background: #000;
+    position: fixed;
+   top: 10px;
+    width: 300px;
+    height: 0;
+   display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+
+.card.active .contact{
+    height: 425px;
+margin-top: 188px;
+
+}
+
+.card.active .contact:hover{
+  
+background: linear-gradient(270deg,
+ rgba(0, 36, 104, 0.851) 30%,
+ rgba(173, 0, 0, 0.85) 70%);
+ color: rgb(4, 4, 38);
+}
+
+.card .contact h2{
+    font-size: 1.2em;
+    line-height: 1.05em;
+    font-weight: 600;
+    color: #fff;
+    }
+    
+    
+    .card .contact h5{
+        color: #fff;
+        margin-top: -25px;
+    }
+    
+    .card .contact h2 span{
+        font-size: 0.75em;
+        font-weight: 400;
+       
+    }
+
+.card .contact li{
+    list-style: none;
+    margin-top: 0;
+    width: 100%;
+    min-height: 100px;
+    background: #00fff7;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 30px;
+    transform: scale(0);
+    opacity: 0;
+    box-shadow: 0 0 60px #1f4c65;
+    -webkit-box-reflect: below 10px
+     linear-gradient;
+}
+
+.card.active .contact li{
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: calc(0.05s * var(--i));
+
+}
+
+.card.active .contact li:hover{
+    
+background: rgb(2, 29, 78);
+background: linear-gradient(270deg,
+ rgb(0, 60, 172) 0%,
+ rgb(238, 255, 88) 60%);
+ color: rgb(255, 255, 255);
+}
+.card .contact li a{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+gap: 10px;
+}
+
+.card .contact li a .iconBx{
+position: relative;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: var(--clr);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card .contact li a .iconBx i{
+    color: #fff;
+    font-size: 1.5em;
+
+}
+
+.card .contact li a p{
+    color: #666;
+    font-size: 1.1em;
+}
+
+.card .contact li a:hover p{
+    color: #111;
+}
+
+.card.active .contact:hover li{
+    opacity: 0.15;
+    filter: blur(2px);
+    transition-delay: 0;
+}
+.card.active .contact li:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+
+
 .clear{
     clear: both;
 }
+
 .logo{
     background: gold;
     border: 3px double #000;
     border-radius: 20px 3px ;
     padding-right: 10px;
     padding-left: 10px;
-  
     color: rgb(44, 12, 73);
     position: fixed;
-  margin-top: 5px;
+    margin-top: 10px;
   margin-left: 80%;
-    text-align: left;
-    float: left;
+    text-align: right;
+    float: right;
     animation: leftSideAni 1s ease forwards;
-  
-}
-
-.head h4{
-margin-top: 50px;
-margin-left: -10px;
-width: 100px;
 }
 
 
@@ -102,6 +327,10 @@ width: 100px;
     display: none;
 }
 
+.images{
+    margin-top: -40px;
+}
+
 .images img{
     margin-top: 150px;
     margin-bottom: -30px;
@@ -111,12 +340,10 @@ width: 100px;
     box-shadow: 0 0 15px red;
     border-radius: 50%;
     border: 1px solid rgb(230, 246, 58) ;
-
 }
 
 .images img:hover{
     box-shadow:  0 0 25px red;
- 
 
 }
 
@@ -125,28 +352,25 @@ width: 100px;
     border: 4px double rgb(255, 234, 1);
  margin-top: 110px;
     margin-right: 30px;
-   width: 30%;
-   height: 30%;
+   width: 29%;
+   height: 29%;
    float: right;
    border-radius: 5%;
    padding-top: -30px;
 }
 .images video:hover{
     box-shadow:  0 0 30px rgb(255, 0, 0);
-
 }
 
 .m1{
     margin-left: 70px;
     margin-right: -30px;
-   
     color: #000;
 }
 
 .m2{
     box-shadow: 0 0 15px rgb(255, 0, 0);
     background: rgb(49, 9, 43);
-  
     border: 5px dashed gold;
     height: 30%;
 padding: 20px;
@@ -170,7 +394,6 @@ margin-left: 15px;
  }
 
 
-
  .social {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +408,6 @@ margin-left: 15px;
 }
 
 .social a { 
-
     margin: 5px;
   padding: 18px;
   border-radius: 50%;
@@ -197,32 +419,34 @@ margin-left: 15px;
 background: #fff;
     margin: 5px;
    border-radius: 50%;
-
 }
 
 
 .blue a{
     background: rgb(56, 56, 252);
     color: #fff;
-
 }
+
 .blue a:hover{
     color: blue;
     border: 3px dotted blue;
 }
+
 .red a{
     background: rgb(211, 0, 0);
     color: #fff;
 }
+
 .red a:hover{
 color: red;
 border: 3px dotted rgb(255, 0, 0);
 }
 
 .green a{
-    background: green;
-    color: #fff;
+   background: green;
+   color: #fff;
 }
+
 .green a:hover{
     color: green;
     border:3px dotted green;

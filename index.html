@@ -1,30 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Bahman P.C</title>
     <link rel="stylesheet" href="index.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
-    
 </head>
 <body>
-    <div class="div"><i class="fa-solid fa-house"></i>
-        <li><button class="btn">Profile</button></li>
-        <li><button class="btn">about</button></li>
-        <li><button class="btn">Portfolio</button></li>
-        <li><button class="btn">New</button></li>
-        <i class="fa-solid sa-user"></i>
-        </div>
+
+
     <div class="logo">
         <h2> Bahman P.C </h2>
     </div>
     
 
 
+    <div class="card">
+        <div class="user">
+        <div class="content">
+       
+            <h3>My Profile <br><span></span></h3>
+        </div>
+            <div class="imgBx">
+        <img src="banafsh.jpg"> 
+       </div>
+        <span class="toggle"></span>
+    </div>
+    <div class="contact">
+        <h2>Bahman P.C<br><span>Software Engineer</span></h2>
+        <h5>Programmer and site designer</h5>
+    <li style="--clr:#204fdb;--i:0">
+    <a href="https://t.me/bahman82">
+       <div class="iconBx"><i  class="fa-brands fa-telegram"></i></div>
+       <p>My Telegram</p>
+   </a>
+    </li>
+    <li style="--clr:#087400;--i:1">
+       <a href="https://wa.me/989157757187">
+           <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
+           <p>My WhatsApp</p>
+        </a>
+       </li>
+    <li style="--clr:#cd0303;--i:2">
+       <a href="https://www.instagram.com/bahmanpc">
+           <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
+           <p>My Instagram</p>
+        </a>
+   </li>
+   </div>
+   </div>
+   <script>
+    let toggle = document.querySelector('.toggle');
+    let card = document.querySelector('.card');
+    toggle.onclick = () =>(
+        card.classList.toggle("active")
+    )
 
-<div class="images">
+</script>
+
+   <!-- <div class="card">
+        <div class="user">
+       <div class="imgBx">
+       <img src="banafsh.jpg"> 
+       </div>
+       <div class="content">
+       <h2>Bahman P.C<br><span>Software Engineer</span></h2>
+       <h5>Programmer and site designer</h5>
+        </div>
+        <span class="toggle"></span>
+       </div>
+        <div class="contact">
+        <li style="--clr:#204fdb;--i:0">
+        <a href="https://t.me/bahman82">
+           <div class="iconBx"><i  class="fa-brands fa-telegram"></i></div>
+           <p>My Telegram</p>
+       </a>
+        </li>
+        <li style="--clr:#087400;--i:1">
+           <a href="https://wa.me/989157757187">
+               <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
+               <p>My WhatsApp</p>
+            </a>
+           </li>
+        <li style="--clr:#cd0303;--i:2">
+           <a href="https://www.instagram.com/bahmanpc">
+               <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
+               <p>My Instagram</p>
+            </a>
+       </li>
+       </div>
+       </div> 
+       
+       <script>
+           let toggle = document.querySelector('.toggle');
+           let card = document.querySelector('.card');
+           toggle.onclick = () =>(
+               card.classList.toggle("active")
+           )
+       
+       </script> -->
+    
+
+
+      <!--  <li><button class="btn">about</button></li>
+       
+        <li><button class="btn">Portfolio</button></li>
+       
+        <li><button class="btn">New</button></li>
+      -->
+        
+    
+
+     <div class="images">
     <img src="asli.png" alt="" class="img-w">
 
 
@@ -33,8 +123,6 @@
    </div>
     
 <div id="container"></div>
-
-
 
 </div>
 <div class="m1">
@@ -60,9 +148,6 @@
         <div class="red"> <a href="https://www.youtube.com/@bahmanpc" style="--socialAni:4"><i class='bx bxl-youtube'></i></a></div>
 <div class="blue">  <a href="https://www.linkedin.com/in/qasem-banman-8829602aa/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a></div>    
 </div>
-    
-    
-
     
 </body>
 </html>
