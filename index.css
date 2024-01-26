@@ -15,9 +15,7 @@
 
 body{
  
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+
     background:  linear-gradient(160.5deg,
   rgb(0, 183, 255) 50%, #400909 50%);
   width: auto;
@@ -60,7 +58,7 @@ padding: 60px 40px 10px;
  .card .user .content h3{ 
    margin-top: -60px;
     font-size: 1.2rem;
-    padding: 60px 10px 30px 10px;
+    padding: 55px 10px 35px 10px;
     border: none;
     outline: none;
     border-radius: 0.4rem;
@@ -88,7 +86,7 @@ padding: 60px 40px 10px;
 .card .user .imgBx{
 position: absolute;
 top: 0;
-transform: translateY(-30%);
+transform: translateY(-35%);
 height: 80px;
 width: 80px;
 border-radius: 50%;
@@ -154,8 +152,9 @@ color: #ffffff;
 }
 
 .card.active .user .toggle{
+  padding: 5px 120px;
     background: #000000;
-   
+   margin-top: 355px;
 }
 
 .card.active .user .toggle:hover{
@@ -167,15 +166,17 @@ color: #ffffff;
 }
 
 .card.active .user .toggle::before{
-content: "Close ▲";
+content: "▲ Close";
 }
 
 .card .contact{
-    
+border-radius: 10px;
+border-top-right-radius: 35px;
+border-top-left-radius: 35px;
    text-align: center;
     background: #000;
     position: fixed;
-   top: 10px;
+   top: 0px;
     width: 300px;
     height: 0;
    display: flex;
@@ -189,21 +190,21 @@ content: "Close ▲";
 
 .card.active .contact{
     height: 425px;
-margin-top: 188px;
+margin-top: 173px;
 
 }
-
+/*
 .card.active .contact:hover{
   
 background: linear-gradient(270deg,
  rgba(0, 36, 104, 0.851) 30%,
  rgba(173, 0, 0, 0.85) 70%);
  color: rgb(4, 4, 38);
-}
+}*/
 
 .card .contact h2{
     font-size: 1.2em;
-    line-height: 1.05em;
+    line-height: 1.15em;
     font-weight: 600;
     color: #fff;
     }
@@ -212,26 +213,26 @@ background: linear-gradient(270deg,
     .card .contact h5{
         color: #fff;
         margin-top: -25px;
+        font-size: 1.25em;
     }
     
     .card .contact h2 span{
         font-size: 0.75em;
         font-weight: 400;
-       
     }
 
 .card .contact li{
     list-style: none;
-    margin-top: 0;
+    margin-top: -10px;
     width: 100%;
     min-height: 100px;
     background: #00fff7;
-    border-radius: 10px;
+    border-radius: 0px;
     display: flex;
     padding: 10px 30px;
     transform: scale(0);
     opacity: 0;
-    box-shadow: 0 0 60px #1f4c65;
+    box-shadow: 0 0 10px #f6ff00;
     -webkit-box-reflect: below 10px
      linear-gradient;
 }
@@ -244,7 +245,9 @@ background: linear-gradient(270deg,
 }
 
 .card.active .contact li:hover{
-    
+    box-shadow: 0 0 50px #ff0000;
+    -webkit-box-reflect: below 10px
+     linear-gradient;
 background: rgb(2, 29, 78);
 background: linear-gradient(270deg,
  rgb(0, 60, 172) 0%,
@@ -257,6 +260,8 @@ justify-content: center;
 align-items: center;
 text-decoration: none;
 gap: 10px;
+
+
 }
 
 .card .contact li a .iconBx{
