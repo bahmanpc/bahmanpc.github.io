@@ -3,7 +3,7 @@
 
 
 *{
-
+float: auto;
     box-sizing: border-box;
 }
 
@@ -24,13 +24,13 @@ body{
 
 .card {
 position: relative;
-
     transition: 0.5s;
     height: 100px;
 }
 
 .card .user{
-    margin-top: 50px;
+    
+    margin-top: 40px;
     display: flex;
    position: fixed;
    gap: 10px;
@@ -97,7 +97,7 @@ z-index: 10;
 }
 
 .card .user .imgBx:hover{
-    border: 5px dashed rgb(57, 48, 3);
+    border: 5px dashed rgb(0, 0, 0);
     border: 5px dashed linear-gradient(270deg,
      rgb(255, 255, 255) 0%,
      rgba(0, 255, 17, 0.766) 60%);
@@ -136,8 +136,8 @@ object-fit: cover;
 
 background: rgb(2, 29, 78);
 background: linear-gradient(270deg,
- rgba(0, 60, 172, 0.731) 0%,
- rgba(0, 255, 17, 0.766) 60%);
+ rgb(0, 62, 176) 0%,
+ rgb(0, 77, 5) 60%);
  color: rgb(4, 4, 38);
 }
 
@@ -161,7 +161,7 @@ color: #ffffff;
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(0, 60, 172, 0.731) 0%,
-     rgba(255, 0, 0, 0.766) 60%);
+     rgba(110, 1, 1, 0.988) 60%);
      color: rgb(4, 4, 38);
 }
 
@@ -190,7 +190,7 @@ border-top-left-radius: 35px;
 
 .card.active .contact{
     height: 425px;
-margin-top: 173px;
+margin-top: 163px;
 
 }
 /*
