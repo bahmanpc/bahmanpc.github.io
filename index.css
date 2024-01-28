@@ -22,42 +22,150 @@ body{
   height: auto;
 }
 
-.card {
+
+#menubtn{
+    position: fixed;
+   margin-left: 74px;
+    margin-top: 15px;
+    width: 80px;
+    height: 80px;
+    background: black;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    font-family: sans-serif;
+    color: #ffea00;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+    text-shadow: 0 0 20px #fff000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+@keyframes animate{
+    0% {
+        transform: rotate(0deg); 
+}
+100% {
+    transform: rotate(720deg);
+}
+
+}
+
+#menubtn::before{
+  
+    content: "";
+ position: absolute;
+
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 5px solid #fffb00;
+   
+    border-bottom: 5px solid rgb(255, 234, 0);
+    border-radius: 50%;
+    animation: animate 2s linear infinite;
+}
+
+#nav{
+    border-right: 6px dotted gold;
+    padding-top: 100px;
+margin-right: 100%;
+    float: left;
+    width: 250px;
+    height: 100vh;
+   position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+transition: 0.5s;
+}
+
+#nav ul{
+    margin-top: 60px;
+}
+
+#nav ul li{
+  
+    padding: 17px 70px;
+    background: rgb(2, 23, 47);
+    text-align: center;
+    list-style: none;
+ margin-top: 20px;
+    color: white;
+    margin-left: -20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+#nav .card .user .content .lin {
+  font-size: 1.2em;
+    padding: 27px 70px;
+    background: rgb(2, 23, 47);
+    text-align: center;
+    list-style: none;
+ margin-top: 20px;
+    color: white;
+    margin-left: -20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+/*
+#nav{
+  float: right;
+    width: 250px;
+    height: 100vh;
+   position: relative;
+    right: -250px;
+
+    top: 0;
+    background-color: rgb(0, 0, 0);
+transition: 0.5s;
+}
+
+#nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+*/
+
+
+#nav .card {
 position: relative;
     transition: 0.5s;
     height: 100px;
 }
 
-.card .user{
-    
-    margin-top: 40px;
+#nav .card .user{
     display: flex;
    position: fixed;
    gap: 10px;
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   width: 300px;
-   min-height: 150px;
-gap: 10px;
-border-radius: 10px;
-padding: 60px 40px 10px;
+
+
 }
 
 
-.card .user .content{
+#nav .card .user .content{
    
         position: relative;
         text-align: center;
-        width: 250px;
-     margin-bottom: 20px;
-
     }
  
-
- .card .user .content h3{ 
-   margin-top: -60px;
-    font-size: 1.2rem;
+/*
+ .ul .card .user .content li 4{ 
+   
+   
     padding: 55px 10px 35px 10px;
     border: none;
     outline: none;
@@ -67,14 +175,14 @@ padding: 60px 40px 10px;
     color: rgb(234, 234, 234);
     font-weight: 700;
     transition: 0.6s;
-}
+}*/
  
 
- .card .user .content h3:active{
+ #nav ul .card .user .content .lin:active{
     scale: 0.92;
  }
  
- .card .user .content h3:hover{
+ #nav .card .user .content .lin:hover{
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(2, 29, 78, 0.681) 0%,
@@ -83,7 +191,7 @@ padding: 60px 40px 10px;
  }
 
 
-.card .user .imgBx{
+ #nav .card .user .imgBx{
 position: absolute;
 top: 0;
 transform: translateY(-35%);
@@ -96,7 +204,7 @@ z-index: 10;
 
 }
 
-.card .user .imgBx:hover{
+#nav .card .user .imgBx:hover{
     border: 5px dashed rgb(0, 0, 0);
     border: 5px dashed linear-gradient(270deg,
      rgb(255, 255, 255) 0%,
@@ -108,7 +216,7 @@ z-index: 10;
 }
 
 
-.card .user .imgBx img{
+#nav .card .user .imgBx img{
 position: absolute;
 width: 100%;
 height: 100%;
@@ -117,12 +225,13 @@ object-fit: cover;
 
 
 
-.card .user .toggle{
+#nav .card .user .toggle{
     position: relative;
     bottom: 0;
-  margin-top: -75px;
+  margin-top: -35px;
+  margin-left: -38px;
     background: #000000;
-    padding: 2px 15px;
+    padding: 5px 30px;
     border-radius: 20px;
     transform: translateY(50%);
     border: 2px dotted #fff;
@@ -132,7 +241,7 @@ object-fit: cover;
 
 }
 
-.card .user .toggle:hover{
+#nav .card .user .toggle:hover{
 
 background: rgb(2, 29, 78);
 background: linear-gradient(270deg,
@@ -141,23 +250,23 @@ background: linear-gradient(270deg,
  color: rgb(4, 4, 38);
 }
 
-.card .user .toggle::before{
-content: "Open ▼";
+#nav ul .card .user .toggle::before{
+content: "▼";
 
 color: #ffffff;
 }
 
-.card.active{
-    height: 450px;
+#nav .card.active{
+    width: 150px;
 }
 
-.card.active .user .toggle{
-  padding: 5px 120px;
+#nav ul .card.active .user .toggle{
+  padding: 7px 30px;
     background: #000000;
-   margin-top: 355px;
+   margin-top: 268px;
 }
 
-.card.active .user .toggle:hover{
+#nav .card.active .user .toggle:hover{
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(0, 60, 172, 0.731) 0%,
@@ -165,19 +274,20 @@ color: #ffffff;
      color: rgb(4, 4, 38);
 }
 
-.card.active .user .toggle::before{
-content: "▲ Close";
+#nav .card.active .user .toggle::before{
+content: "▲";
 }
 
-.card .contact{
+#nav .card .contact{
 border-radius: 10px;
 border-top-right-radius: 35px;
 border-top-left-radius: 35px;
+margin-left: -30px;
    text-align: center;
     background: #000;
     position: fixed;
    top: 0px;
-    width: 300px;
+    width: 235px;
     height: 0;
    display: flex;
     flex-direction: column;
@@ -188,9 +298,9 @@ border-top-left-radius: 35px;
 
 
 
-.card.active .contact{
-    height: 425px;
-margin-top: 163px;
+#nav .card.active .contact{
+    height: 285px;
+margin-top: 463px;
 
 }
 /*
@@ -221,7 +331,8 @@ background: linear-gradient(270deg,
         font-weight: 400;
     }
 
-.card .contact li{
+#nav .card .contact li{
+    margin-left: 10px;
     list-style: none;
     margin-top: -10px;
     width: 100%;
@@ -235,16 +346,20 @@ background: linear-gradient(270deg,
     box-shadow: 0 0 10px #f6ff00;
     -webkit-box-reflect: below 10px
      linear-gradient;
+     color: #e4e4e4;
 }
 
-.card.active .contact li{
+#nav .card.active .contact li{
+    margin-left: 2px;
+    padding: 0 10px;
+    width: 230px;
     opacity: 1;
     transform: scale(1);
     transition-delay: calc(0.05s * var(--i));
 
 }
 
-.card.active .contact li:hover{
+#nav .card.active .contact li:hover{
     box-shadow: 0 0 50px #ff0000;
     -webkit-box-reflect: below 10px
      linear-gradient;
@@ -254,7 +369,7 @@ background: linear-gradient(270deg,
  rgb(238, 255, 88) 60%);
  color: rgb(255, 255, 255);
 }
-.card .contact li a{
+#nav .card .contact li a{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -264,7 +379,7 @@ gap: 10px;
 
 }
 
-.card .contact li a .iconBx{
+#nav .card .contact li a .iconBx{
 position: relative;
 width: 60px;
 height: 60px;
@@ -281,21 +396,21 @@ align-items: center;
 
 }
 
-.card .contact li a p{
+#nav .card .contact li a p{
     color: #666;
     font-size: 1.1em;
 }
 
-.card .contact li a:hover p{
+#nav .card .contact li a:hover p{
     color: #111;
 }
 
-.card.active .contact:hover li{
+#nav .card.active .contact:hover li{
     opacity: 0.15;
     filter: blur(2px);
     transition-delay: 0;
 }
-.card.active .contact li:hover{
+#nav .card.active .contact li:hover{
     opacity: 1;
     filter: blur(0px);
 }
@@ -332,9 +447,6 @@ align-items: center;
     display: none;
 }
 
-.images{
-    margin-top: -40px;
-}
 
 .images img{
     margin-top: 150px;
@@ -347,25 +459,20 @@ align-items: center;
     border: 1px solid rgb(230, 246, 58) ;
 }
 
-.images img:hover{
-    box-shadow:  0 0 25px red;
 
-}
 
 .images video{
-    box-shadow: 0 0 25px red;
+    box-shadow: 0 0 20px red;
     border: 4px double rgb(255, 234, 1);
- margin-top: 110px;
-    margin-right: 30px;
-   width: 29%;
-   height: 29%;
+ margin-top: 120px;
+  margin-right: 30px;
+   width: 27%;
+   height: 27%;
    float: right;
    border-radius: 5%;
-   padding-top: -30px;
+   
 }
-.images video:hover{
-    box-shadow:  0 0 30px rgb(255, 0, 0);
-}
+
 
 .m1{
     margin-left: 70px;

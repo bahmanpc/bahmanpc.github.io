@@ -8,15 +8,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
 </head>
+
+<style>
+
+
+
+
+</style>
+
 <body>
 
+    <div id="nav">
+        <ul>
+        <li class="1">Home</li>
+        <li class="2">About</li>
+        <li class="3">Biography</li>
+        <div class="card">
+            <div class="user">
+            <div class="content">
+                <li class="lin">Contact us<br><span></span></h3>
+    </div>
+    <span class="toggle"></span>
+</div>
+<div class="contact">
+<li style="--clr:#3a84fb;--i:0">
+    <a href="https://t.me/bahman82">
+       <div class="iconBx"><i  class="fa-brands fa-telegram"></i></div>
+       <p>My Telegram</p>
+   </a>
+    </li>
+    <li style="--clr:#009808;--i:1">
+        <a href="https://wa.me/989157757187">
+            <div class="iconBx"><i  class="fa-brands fa-whatsapp"></i></div>
+            <p>My WhatsApp</p>
+         </a>
+        </li>
+     <li style="--clr:#ff0000;--i:2">
+        <a href="https://www.instagram.com/bahmanpc">
+            <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
+            <p>My Instagram</p>
+         </a>
+    </li>
+    </div>
+    </div>
 
-  <!--  <div class="logo">
-        <h2> Bahman P.C </h2>
-    </div> -->
-    
 
 
+        </ul>
+        
+        
+        
+         </div>
+        
+         <div id="menubtn">Menu </div>
+        
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var nav = document.getElementById("nav")
+        
+        nav.style.right = "-250px"
+        menubtn.onclick = function(){
+            if(nav.style.right == "-250px"){
+                nav.style.right = "0";
+            }
+            else{
+                nav.style.right = "-250px"
+            }
+        }
+        
+        let toggle = document.querySelector('.toggle');
+    let card = document.querySelector('.card');
+    toggle.onclick = () =>(
+        card.classList.toggle("active")
+    )
+        </script>
+        
+        
+
+
+<!--
     <div class="card">
         <div class="user">
         <div class="content">
@@ -58,60 +128,9 @@
         card.classList.toggle("active")
     )
 
-</script>
+</script> -->
 
-   <!-- <div class="card">
-        <div class="user">
-       <div class="imgBx">
-       <img src="banafsh.jpg"> 
-       </div>
-       <div class="content">
-       <h2>Bahman P.C<br><span>Software Engineer</span></h2>
-       <h5>Programmer and site designer</h5>
-        </div>
-        <span class="toggle"></span>
-       </div>
-        <div class="contact">
-        <li style="--clr:#204fdb;--i:0">
-        <a href="https://t.me/bahman82">
-           <div class="iconBx"><i  class="fa-brands fa-telegram"></i></div>
-           <p>My Telegram</p>
-       </a>
-        </li>
-        <li style="--clr:#087400;--i:1">
-           <a href="https://wa.me/989157757187">
-               <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
-               <p>My WhatsApp</p>
-            </a>
-           </li>
-        <li style="--clr:#cd0303;--i:2">
-           <a href="https://www.instagram.com/bahmanpc">
-               <div class="iconBx"><i  class="fa-brands fa-instagram"></i></div>
-               <p>My Instagram</p>
-            </a>
-       </li>
-       </div>
-       </div> 
-       
-       <script>
-           let toggle = document.querySelector('.toggle');
-           let card = document.querySelector('.card');
-           toggle.onclick = () =>(
-               card.classList.toggle("active")
-           )
-       
-       </script> -->
-    
-
-
-      <!--  <li><button class="btn">about</button></li>
-       
-        <li><button class="btn">Portfolio</button></li>
-       
-        <li><button class="btn">New</button></li>
-      -->
-        
-    
+<div class="clear"></div>
 
      <div class="images">
     <img src="asli.png" alt="" class="img-w">
