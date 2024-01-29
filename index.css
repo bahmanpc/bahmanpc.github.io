@@ -25,7 +25,7 @@ body{
 
 #menubtn{
     position: fixed;
-   margin-left: 74px;
+   margin-left: 15px;
     margin-top: 15px;
     width: 80px;
     height: 80px;
@@ -72,12 +72,15 @@ body{
     animation: animate 2s linear infinite;
 }
 
+
+
+
 #nav{
     border-right: 6px dotted gold;
     padding-top: 100px;
-margin-right: 100%;
+    margin-right: 100%;
     float: left;
-    width: 250px;
+    width: 300px;
     height: 100vh;
    position: fixed;
     right: -250px;
@@ -103,39 +106,126 @@ transition: 0.5s;
     border-radius: 5px;
 }
 
-#nav .card .user .content .lin {
-  font-size: 1.2em;
-    padding: 27px 70px;
-    background: rgb(2, 23, 47);
-    text-align: center;
-    list-style: none;
- margin-top: 20px;
-    color: white;
-    margin-left: -20px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-/*
-#nav{
-  float: right;
-    width: 250px;
-    height: 100vh;
-   position: relative;
-    right: -250px;
 
-    top: 0;
-    background-color: rgb(0, 0, 0);
+
+ #lin1:hover,#lin2:hover,#lin3:hover,#lin4:hover{
+    background: rgb(2, 29, 78);
+    background: linear-gradient(270deg,
+     rgba(2, 29, 78, 0.681) 0%,
+     rgba(31, 215, 232, 0.873) 60%);
+     color: rgb(4, 4, 38);
+ }
+
+ #contact4{
+    padding-top: 30px;
+    margin-right: 100%;
+    margin-top: 450px;
+   text-align: center;
+   border-radius: 10px;
+    width: 260px;
+    height: 360px;
+   position: fixed;
+    right: -250px;
+    top: 10px;
+    background-color: rgb(46, 0, 0);
 transition: 0.5s;
 }
 
-#nav ul li{
-    list-style: none;
-    margin: 50px 20px;
-    color: white;
-    text-align: center;
+#contact4 h3{
+    color: azure;
+    margin-top: -10px;
 }
 
-*/
+#contact4 li{
+    list-style: none;
+ margin-top: 8px;
+ margin-left: 8px;
+    width: 100%;
+text-align: center;
+    background: #011414;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px 0px 10px 10px;
+    transform: scale(0);
+    opacity: 0;
+    box-shadow: 0 0 10px #f6ff00;
+    -webkit-box-reflect: below 10px
+     linear-gradient;
+     color: #e4e4e4;
+     
+  
+    width: 240px;
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: calc(0.05s * var(--i));
+
+}
+
+
+#contact4 li:hover{
+    box-shadow: 0 0 50px #ff0000;
+    -webkit-box-reflect: below 10px
+     linear-gradient;
+background: rgb(2, 29, 78);
+background: linear-gradient(270deg,
+ rgb(0, 60, 172) 0%,
+ rgb(238, 255, 88) 60%);
+ color: rgb(255, 255, 255);
+}
+#contact4 li a{
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+gap: 10px;
+
+
+}
+
+#contact4 li a .iconBx{
+position: relative;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+background: var(--clr);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#contact4 li a .iconBx i{
+    color: #fff;
+    font-size: 1.5em;
+
+}
+
+#contact4 li a p{
+    color: #666;
+    font-size: 1.1em;
+}
+
+#contact4 li a:hover p{
+    color: #111;
+}
+
+#contact4:hover li{
+    opacity: 0.15;
+    filter: blur(2px);
+    transition-delay: 0;
+}
+#contact4 li:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+
+
+
+
+
+
+
+
 
 
 #nav .card {
@@ -151,38 +241,51 @@ position: relative;
    justify-content: center;
    flex-direction: column;
    align-items: center;
-
+width: 280px;
 
 }
 
 
-#nav .card .user .content{
-   
+#nav .card .user .content4{
+   width: 250px;
+   margin-top: 100px;
         position: relative;
         text-align: center;
     }
  
-/*
- .ul .card .user .content li 4{ 
-   
-   
-    padding: 55px 10px 35px 10px;
-    border: none;
-    outline: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    background-color: rgb(14,14,26);
-    color: rgb(234, 234, 234);
-    font-weight: 700;
-    transition: 0.6s;
-}*/
- 
+    #nav .card .user .content3 .lin3{
+        font-size: 1.2em;
+        padding: 27px 70px;
+        background: rgb(2, 23, 47);
+        text-align: center;
+        list-style: none;
+     margin-top: 20px;
+        color: white;
+        margin-left: -20px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
 
- #nav ul .card .user .content .lin:active{
+
+#nav .card .user .content4 .lin4{
+    
+    font-size: 1.2em;
+      padding: 27px 70px;
+      background: rgb(2, 23, 47);
+      text-align: center;
+      list-style: none;
+   margin-top: 20px;
+      color: white;
+      margin-left: -20px;
+      margin-right: 20px;
+      border-radius: 5px;
+  }
+
+ #nav .card .user .content4 .lin4:active{
     scale: 0.92;
  }
  
- #nav .card .user .content .lin:hover{
+ #nav .card .user .content4 .lin4:hover{
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(2, 29, 78, 0.681) 0%,
@@ -191,7 +294,7 @@ position: relative;
  }
 
 
- #nav .card .user .imgBx{
+ #nav .card .contact .imgBx{
 position: absolute;
 top: 0;
 transform: translateY(-35%);
@@ -204,7 +307,7 @@ z-index: 10;
 
 }
 
-#nav .card .user .imgBx:hover{
+#nav .card .contact .imgBx:hover{
     border: 5px dashed rgb(0, 0, 0);
     border: 5px dashed linear-gradient(270deg,
      rgb(255, 255, 255) 0%,
@@ -216,16 +319,14 @@ z-index: 10;
 }
 
 
-#nav .card .user .imgBx img{
+#nav .card .contact .imgBx img{
 position: absolute;
 width: 100%;
 height: 100%;
 object-fit: cover;
 }
 
-
-
-#nav .card .user .toggle{
+#nav .card .user .toggle3{
     position: relative;
     bottom: 0;
   margin-top: -35px;
@@ -241,7 +342,23 @@ object-fit: cover;
 
 }
 
-#nav .card .user .toggle:hover{
+#nav .card .user .toggle4{
+    position: relative;
+    bottom: 0;
+  margin-top: -35px;
+  margin-left: -38px;
+    background: #000000;
+    padding: 5px 30px;
+    border-radius: 20px;
+    transform: translateY(50%);
+    border: 2px dotted #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+#nav .card .user .toggle4:hover{
 
 background: rgb(2, 29, 78);
 background: linear-gradient(270deg,
@@ -250,7 +367,7 @@ background: linear-gradient(270deg,
  color: rgb(4, 4, 38);
 }
 
-#nav ul .card .user .toggle::before{
+#nav .card .user .toggle4::before{
 content: "▼";
 
 color: #ffffff;
@@ -260,13 +377,13 @@ color: #ffffff;
     width: 150px;
 }
 
-#nav ul .card.active .user .toggle{
+#nav .card.active .user .toggle4{
   padding: 7px 30px;
     background: #000000;
    margin-top: 268px;
 }
 
-#nav .card.active .user .toggle:hover{
+#nav .card.active .user .toggle4:hover{
     background: rgb(2, 29, 78);
     background: linear-gradient(270deg,
      rgba(0, 60, 172, 0.731) 0%,
@@ -274,7 +391,7 @@ color: #ffffff;
      color: rgb(4, 4, 38);
 }
 
-#nav .card.active .user .toggle::before{
+#nav .card.active .user .toggle4::before{
 content: "▲";
 }
 
@@ -282,12 +399,12 @@ content: "▲";
 border-radius: 10px;
 border-top-right-radius: 35px;
 border-top-left-radius: 35px;
-margin-left: -30px;
+margin-left: 0px;
    text-align: center;
     background: #000;
     position: fixed;
    top: 0px;
-    width: 235px;
+    width: 250px;
     height: 0;
    display: flex;
     flex-direction: column;
@@ -312,7 +429,7 @@ background: linear-gradient(270deg,
  color: rgb(4, 4, 38);
 }*/
 
-.card .contact h2{
+#nav .card .contact h2{
     font-size: 1.2em;
     line-height: 1.15em;
     font-weight: 600;
@@ -320,101 +437,16 @@ background: linear-gradient(270deg,
     }
     
     
-    .card .contact h5{
+    #nav .card .contact h5{
         color: #fff;
         margin-top: -25px;
         font-size: 1.25em;
     }
     
-    .card .contact h2 span{
+   #nav .card .contact h2 span{
         font-size: 0.75em;
         font-weight: 400;
     }
-
-#nav .card .contact li{
-    margin-left: 10px;
-    list-style: none;
-    margin-top: -10px;
-    width: 100%;
-    min-height: 100px;
-    background: #00fff7;
-    border-radius: 0px;
-    display: flex;
-    padding: 10px 30px;
-    transform: scale(0);
-    opacity: 0;
-    box-shadow: 0 0 10px #f6ff00;
-    -webkit-box-reflect: below 10px
-     linear-gradient;
-     color: #e4e4e4;
-}
-
-#nav .card.active .contact li{
-    margin-left: 2px;
-    padding: 0 10px;
-    width: 230px;
-    opacity: 1;
-    transform: scale(1);
-    transition-delay: calc(0.05s * var(--i));
-
-}
-
-#nav .card.active .contact li:hover{
-    box-shadow: 0 0 50px #ff0000;
-    -webkit-box-reflect: below 10px
-     linear-gradient;
-background: rgb(2, 29, 78);
-background: linear-gradient(270deg,
- rgb(0, 60, 172) 0%,
- rgb(238, 255, 88) 60%);
- color: rgb(255, 255, 255);
-}
-#nav .card .contact li a{
-display: flex;
-justify-content: center;
-align-items: center;
-text-decoration: none;
-gap: 10px;
-
-
-}
-
-#nav .card .contact li a .iconBx{
-position: relative;
-width: 60px;
-height: 60px;
-border-radius: 50%;
-background: var(--clr);
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.card .contact li a .iconBx i{
-    color: #fff;
-    font-size: 1.5em;
-
-}
-
-#nav .card .contact li a p{
-    color: #666;
-    font-size: 1.1em;
-}
-
-#nav .card .contact li a:hover p{
-    color: #111;
-}
-
-#nav .card.active .contact:hover li{
-    opacity: 0.15;
-    filter: blur(2px);
-    transition-delay: 0;
-}
-#nav .card.active .contact li:hover{
-    opacity: 1;
-    filter: blur(0px);
-}
-
 
 
 .clear{

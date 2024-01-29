@@ -11,26 +11,26 @@
 
 <style>
 
-
-
-
 </style>
 
 <body>
 
     <div id="nav">
         <ul>
-        <li class="1">Home</li>
-        <li class="2">About</li>
-        <li class="3">Biography</li>
-        <div class="card">
-            <div class="user">
-            <div class="content">
-                <li class="lin">Contact us<br><span></span></h3>
-    </div>
-    <span class="toggle"></span>
-</div>
-<div class="contact">
+        <li id="lin1">Home</li>
+        <li id="lin2">About</li>
+
+     
+      
+        <li id="lin3">Biography</li>
+
+                <li id="lin4">Contact us</li>
+         </ul>
+            </div>
+        
+   
+<div id="contact4">
+    <h3>You can contact me through the links below</h3>
 <li style="--clr:#3a84fb;--i:0">
     <a href="https://t.me/bahman82">
        <div class="iconBx"><i  class="fa-brands fa-telegram"></i></div>
@@ -49,16 +49,8 @@
             <p>My Instagram</p>
          </a>
     </li>
-    </div>
-    </div>
 
-
-
-        </ul>
-        
-        
-        
-         </div>
+      </div>
         
          <div id="menubtn">Menu </div>
         
@@ -76,6 +68,19 @@
             }
         }
         
+            var lin4 = document.getElementById("lin4")
+            var contact4 = document.getElementById("contact4")
+        
+        contact4.style.right = "0px"
+        lin4.onclick = function(){
+            if(contact4.style.right == "-250px"){
+                contact4.style.right = "0px";
+            }
+            else{
+                contact4.style.right = "-250px"
+            }
+        }
+
         let toggle = document.querySelector('.toggle');
     let card = document.querySelector('.card');
     toggle.onclick = () =>(
