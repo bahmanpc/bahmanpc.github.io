@@ -434,7 +434,7 @@ background: #fff;
 
 
 .blue a{
-    background: rgb(56, 56, 252);
+    background: rgb(0, 139, 231);
     color: #fff;
 }
 
@@ -444,7 +444,7 @@ background: #fff;
 }
 
 .red a{
-    background: rgb(211, 0, 0);
+    background: rgb(255, 0, 0);
     color: #fff;
 }
 
@@ -454,11 +454,11 @@ border: 3px dotted rgb(255, 0, 0);
 }
 
 .green a{
-   background: green;
+   background: rgb(0, 182, 0);
    color: #fff;
 }
 
 .green a:hover{
-    color: green;
-    border:3px dotted green;
+    color: rgb(0, 196, 0);
+    border:3px dotted rgb(0, 209, 0);
 }
