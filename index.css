@@ -116,6 +116,101 @@ transition: 0.5s;
      color: rgb(4, 4, 38);
  }
 
+ 
+ 
+
+#contact3{
+    border-radius: 8px;
+    transition: 0.5s;
+    height: 300px;
+    display: flex;
+   position: fixed;
+   background: #000;
+   gap: 10px;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+width: 280px;
+margin-right: 100%;
+margin-top: 350px;
+}
+
+#contact3:hover{
+    border-radius: 10%;
+    border: 3px solid #fff;
+    background: linear-gradient(270deg,
+     rgba(0, 0, 0, 0.851) 30%,
+     rgba(3, 0, 0, 0.85) 70%);
+     color: rgb(4, 4, 38);
+     box-shadow: 0 0 40px #ff0000;
+     -webkit-box-reflect: below 50px
+      linear-gradient;
+    }
+ 
+
+
+ #contact3 .imgBx{
+position: absolute;
+margin-top: -200px;
+transform: translateY(-50%);
+height: 80px;
+width: 80px;
+border-radius: 50%;
+border: 5px solid #000000;
+overflow: hidden;
+z-index: 10;
+
+}
+
+#contact3 .imgBx:hover{
+    border: 4px solid rgb(0, 0, 0);
+    color: rgb(4, 4, 38);
+     box-shadow: 0 0 60px #06eaffe4;
+-webkit-box-reflect: below 50px
+ linear-gradient;
+}
+
+
+#contact3 .imgBx img{
+    margin-left: -50%;
+position: absolute;
+width: 100%;
+height: 100%;
+text-align: center;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+#contact3 h2{
+    font-size: 1.2em;
+    padding: 10px;
+    line-height: 1.15em;
+    font-weight: 600;
+    color: #fff;
+    }
+    
+    
+    #contact3 h5{
+        padding: 0 5px;
+        color: #fff;
+        margin-top: -25px;
+        font-size: 1.2em;
+    }
+    
+   #contact3 h2 span{
+        font-size: 0.75em;
+        font-weight: 400;
+    }
+
+
  #contact4{
     padding-top: 30px;
     margin-right: 100%;
@@ -140,7 +235,7 @@ transition: 0.5s;
 #contact4 li{
     list-style: none;
  margin-top: 8px;
- margin-left: 0px;
+ margin-left: 10px;
     width: 100%;
 text-align: center;
     background: #011414;
@@ -219,99 +314,6 @@ align-items: center;
     filter: blur(0px);
 }
 
-
- 
-
-#contact3{
-    border-radius: 8px;
-    transition: 0.5s;
-    height: 300px;
-    display: flex;
-   position: fixed;
-   background: #000;
-   gap: 10px;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
-   align-items: center;
-width: 280px;
-margin-right: 100%;
-margin-top: 350px;
-}
-
-
- 
-
-
- #contact3 .imgBx{
-position: absolute;
-margin-top: -200px;
-transform: translateY(-50%);
-height: 80px;
-width: 80px;
-border-radius: 50%;
-border: 5px solid #000000;
-overflow: hidden;
-z-index: 10;
-
-}
-
-#contact3 .imgBx:hover{
-    border: 4px solid rgb(0, 0, 0);
-    color: rgb(4, 4, 38);
-     box-shadow: 0 0 60px #06eaffe4;
--webkit-box-reflect: below 50px
- linear-gradient;
-}
-
-
-#contact3 .imgBx img{
-    margin-left: -50%;
-position: absolute;
-width: 100%;
-height: 100%;
-text-align: center;
-object-fit: cover;
-}
-
-
-
-
-
-
-
-
-#contact3:hover{
-border-radius: 50%;
-border: 3px solid #fff;
-background: linear-gradient(270deg,
- rgba(0, 0, 0, 0.851) 30%,
- rgba(3, 0, 0, 0.85) 70%);
- color: rgb(4, 4, 38);
- box-shadow: 0 0 40px #ff0000;
- -webkit-box-reflect: below 50px
-  linear-gradient;
-}
-#contact3 h2{
-    font-size: 1.2em;
-    padding: 10px;
-    line-height: 1.15em;
-    font-weight: 600;
-    color: #fff;
-    }
-    
-    
-    #contact3 h5{
-        padding: 0 5px;
-        color: #fff;
-        margin-top: -25px;
-        font-size: 1.2em;
-    }
-    
-   #contact3 h2 span{
-        font-size: 0.75em;
-        font-weight: 400;
-    }
 
 
 .clear{
