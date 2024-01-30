@@ -23,12 +23,13 @@
      
       
         <li id="lin3">Biography</li>
+   
 
                 <li id="lin4">Contact us</li>
          </ul>
             </div>
-        
-   
+     
+
 <div id="contact4">
     <h3>You can contact me through the links below</h3>
 <li style="--clr:#3a84fb;--i:0">
@@ -54,30 +55,73 @@
         
          <div id="menubtn">Menu </div>
         
+           
+            
+<div id="contact3">
+    <div class="imgBx">
+        <img src="banafsh.jpg"> 
+       </div>
+        <h2>Bahman P.C<br><span>Hi, I'm Abolghasem Bahman, 21 years old from Tehran,Iran</span><br> software engineer</h2>
+        <h5>Programmer and site designer</h5>
+    </div>
+        <!--  var lin4 = document.getElementById("lin4")
+            var contact4 = document.getElementById("contact4")
+        -->
         <script>
-            var menubtn = document.getElementById("menubtn")
-            var nav = document.getElementById("nav")
         
         nav.style.right = "0px"
         menubtn.onclick = function(){
-            if(nav.style.right == "-250px"){
+            if(nav.style.right == "-300px"){
                 nav.style.right = "0px";
             }
             else{
-                nav.style.right = "-250px"
+                nav.style.right = "-300px"
+            }
+            if(contact3.style.right == "-590px"){
+                contact3.style.right = "300px";
+            }
+            if(contact4.style.right == "-280px"){
+                contact4.style.right = "0px";
+
+            }
+
+        }
+
+        nav.style.right = "0px"
+        lin1.onclick = function(){
+            if(nav.style.right == "-300px"){
+                nav.style.right = "0px";
+            }
+            else{
+                nav.style.right = "-300px"
+            }
+            if(contact3.style.right == "-590px"){
+                contact3.style.right = "300px";
+            }
+            if(contact4.style.right == "-280px"){
+                contact4.style.right = "0px";
+
+            }
+
+        }
+
+        contact3.style.right = "300px"
+        lin3.onclick = function(){
+            if(contact3.style.right == "-590px"){
+                contact3.style.right = "300px";
+            }
+            else{
+                contact3.style.right = "-590px"
             }
         }
-        
-            var lin4 = document.getElementById("lin4")
-            var contact4 = document.getElementById("contact4")
-        
+      
         contact4.style.right = "0px"
         lin4.onclick = function(){
-            if(contact4.style.right == "-250px"){
+            if(contact4.style.right == "-280px"){
                 contact4.style.right = "0px";
             }
             else{
-                contact4.style.right = "-250px"
+                contact4.style.right = "-280px"
             }
         }
 
