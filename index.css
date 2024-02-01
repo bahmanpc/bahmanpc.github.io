@@ -93,7 +93,7 @@ transition: 0.5s;
  margin-top: 20px;
     color: white;
     margin-left: -20px;
-    margin-right: 20px;
+    margin-right: 40px;
     border-radius: 5px;
 }
 
@@ -107,8 +107,16 @@ transition: 0.5s;
      color: rgb(4, 4, 38);
  }
 
+
+ #lin2 a{
+    text-decoration: none;
+    margin-left: -70px;
+    color: #e4e4e4;
+    text-align: center;
+    padding: 18px 90px;
+ }
  
- 
+
 
 #contact3{
     border-radius: 8px;
