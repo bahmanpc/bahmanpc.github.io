@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
 
 *{
-  
         box-sizing: border-box;
-   
     }
     
     
@@ -40,17 +36,14 @@ h3,h4{
     margin-left: 47%;
   margin-right: 47%;
     margin-top: -40px;
-   
     color: aliceblue;
     border-radius: 40px;
-  
-
 }
 
 ul{
     padding: 3px 5px 3px 5px;
     border-radius: 40px;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     background: rgb(86, 0, 0);
     height: 40px;
     width: 80px;
@@ -59,18 +52,17 @@ ul{
 #back li{
 text-decoration: none;
 text-align: center;
-
-
 list-style: none;
-
 padding: 5px 10px 5px 13px;
 }
+
+
 #back a{
     text-align: center;
-    padding: 11px 25px 10px 20px ;
+    padding: 10px 20px ;
     border-radius: 40px;
     text-decoration: none;
     color: aliceblue;
-    margin-left: -20px;
+    margin-left: -16px;
  
 }
