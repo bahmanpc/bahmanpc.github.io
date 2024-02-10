@@ -342,20 +342,17 @@
       font-size: 22px;
       border-radius: 50%;
     }
-    .social-link .discord {
-      color: hsl(235, 86%, 65%);
+    .social-link .whatsapp {
+      color: hsl(104, 99%, 36%);
     }
   
-    .social-link .twitter {
-      color: hsl(203, 89%, 53%);
-    }
-  
-    .social-link .facebook {
-      color: hsl(220, 46%, 48%);
+    .social-link .instagram, .youtube {
+      color: hsl(0, 100%, 39%);
     }
     .social-link .icon-box:hover {
       background: var(--accent);
       color: var(--white);
+      border: 2px solid black;
     }
     .newsletter {
       margin-bottom: 98px;
