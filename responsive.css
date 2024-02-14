@@ -6,6 +6,7 @@
       --fs-base: 0.9rem;
     }
     /*=============== BLOG ===============*/
+    
     .blog-card {
       display: grid;
       grid-template-columns: 3fr 4fr;
@@ -22,6 +23,7 @@
     }
   }
   /*=============== responsive for larger than 650px screen ===============*/
+  
   @media (min-width: 650px) {
     :root {
       /*=============== typography ===============*/
@@ -32,11 +34,11 @@
       padding: 0 30px;
     }
     /*=============== HEADER  ===============*/
-    .navbar {
+   .navbar {
       padding: 30px 0;
     }
     /*=============== BLOG  ===============*/
-    .blog .h2 {
+   .blog .h2 {
       position: relative;
       text-align: left;
       padding-left: 2rem;
@@ -106,7 +108,7 @@
   /*=============== responsive for larger than 768px screen  ===============*/
   @media (min-width: 768px) {
     /*=============== REUSED STYLE  ===============*/
-    .container {
+   .container {
       max-width: 800px;
     }
   }
@@ -114,11 +116,11 @@
   @media (min-width: 1024px) {
     :root {
       /*=============== typography  ===============*/
-      --fs-base: 1rem;
+    --fs-base: 1rem;
       --fs-1: 3rem;
     }
     /*=============== REUSED STYLE   ===============*/
-    .container {
+   .container {
       max-width: 1150px;
     }
     /*=============== HEADER ===============*/
@@ -135,9 +137,9 @@
       gap: 30px;
     }
     .desktop-nav .nav-link {
-      color: var(--foreground-secondary);
       font-weight: 700;
-    }
+color: var(--foreground-secondary);   
+ }
     .desktop-nav .nav-link:hover {
       color: var(--accent);
     }
@@ -198,16 +200,17 @@
       justify-content: center;
       align-items: center;
     }
+    /*
     .hero .pattern-bg {
       position: absolute;
       top: 50%;
       transform: translateY(-45%);
       width: 100%;
       height: 550px;
-      background: url(../images/pattern.png);
+      background: url(./pattern.png);
       background-size: contain;
       opacity: 0.3;
-    }
+    }*/
     .hero .img-box {
       position: relative;
       z-index: 2;
@@ -245,7 +248,7 @@
       gap: 60px;
     }
     /*=============== ASIDE ===============*/
-    .aside {
+   .aside {
       display: block;
       align-self: stretch;
     }
@@ -289,10 +292,10 @@
       background: var(--accent);
       color: var(--white);
     }
-    /*
+    
     .topic-btn ion-icon {
       --ionicon-stroke-width: 40px;
-    }*/
+    }
     .topic-btn p {
       padding: 15px;
       color: var(--foreground-secondary);

@@ -1,14 +1,14 @@
 // navbar variables
-const nav = document.querySelector(".mobile-nav"),
+ const nav = document.querySelector(".mobile-nav"),
   navMenuBtn = document.querySelector(".nav-menu-btn"),
   navCloseBtn = document.querySelector(".nav-close-btn");
 
-// navToggle function
+// navToggle function mobile
 const navToggleFunc = () => nav.classList.toggle("active");
 navMenuBtn.addEventListener("click", navToggleFunc);
 navCloseBtn.addEventListener("click", navToggleFunc);
 
-// theme toggle variables
+// theme toggle variables desktop
 const themeBtn = document.querySelectorAll(".theme-btn");
 
 for (let i = 0; i < themeBtn.length; i++) {

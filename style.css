@@ -125,6 +125,8 @@
   .dark-theme::-webkit-scrollbar-track {
     background: hsl(219, 27%, 20%);
   }
+
+
   /*=============== BASE ===============*/
   .h1,
   .h2,
@@ -161,14 +163,13 @@
     margin-inline: auto;
     margin: auto; /* fallback for margin-inline */
   }
-  
   .btn {
     min-width: 10rem;
     border-radius: 100px;
     text-align: center;
     transition: all 0.2s;
   }
-  .btn-primary {
+   .btn-primary {
     background: var(--accent);
     color: var(--white);
     padding: 0.6rem 1.2rem;
@@ -190,7 +191,7 @@
   
   /*=============== Extra style for dark theme ===============*/
   
-  .dark-theme .btn-primary:hover {
+ /* .dark-theme .btn-primary:hover {
     color: var(--background-primary);
   }
   
@@ -199,6 +200,7 @@
     color: var(--foreground-secondary);
   }
   
+
   .dark-theme .blog-topic:hover {
     background: var(--foreground-primary);
     color: var(--action-primary);
@@ -228,7 +230,7 @@
     gap: 15px;
     padding: 15px 0;
   }
-  
+
   .logo {
     font-weight: 900;
     font-size: 1.5rem;
@@ -261,13 +263,16 @@
     background: var(--accent);
     color: var(--white);
   }
+  
   .theme-btn-mobile ion-icon {
     display: none;
   }
+  
   .theme-btn-mobile.light .sun,
   .theme-btn-mobile.dark .moon {
     display: block;
   }
+
   .mobile-nav {
     position: fixed;
     inset: 0;
@@ -280,10 +285,12 @@
     transition: 0.5s cubic-bezier(1, 0, 0.3, 0.7);
     z-index: 10;
   }
+  
   .mobile-nav.active {
     transform: translate(0);
     visibility: visible;
   }
+  
   .nav-close-btn {
     position: absolute;
     top: 20px;
@@ -340,6 +347,10 @@
     display: none;
   }
   /*=============== BLOG ===============*/
+
+
+
+  
   .main {
     background: var(--background-secondary);
     padding: var(--py) 0;
@@ -427,6 +438,8 @@
   .blog ion-icon {
     --icon-stroke-width: 50px;
   }*/
+
+
   .load-more {
     margin: auto;
     background: var(--foreground-secondary);
@@ -434,15 +447,17 @@
     padding: 0.6rem 1.2rem;
     transition: all 0.2s;
   }
-  .load-more {
+  .load-more:hover {
     background: var(--accent);
   }
   /*=============== ASIDE ===============*/
+
   .aside {
     display: none;
   }
   
   /*=============== FOOTER ===============*/
+
   footer {
     background: var(--background-primary);
   }
