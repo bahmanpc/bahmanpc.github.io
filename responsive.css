@@ -348,15 +348,20 @@ color: var(--foreground-secondary);
     .social-link .whatsapp {
       color: hsl(104, 99%, 36%);
     }
+    .social-link .whatsapp:hover{
+      background: hsl(104, 99%, 36%);
+      color: #ffffff;
+    }
   
     .social-link .instagram, .youtube {
       color: hsl(0, 100%, 39%);
     }
-    .social-link .icon-box:hover {
-      background: var(--accent);
-      color: var(--white);
-      border: 2px solid black;
+      .social-link .instagram:hover, .youtube:hover {
+        color: hsl(0, 0%, 100%);
+        background: hsl(0, 100%, 39%);
+      }
     }
+  
     .newsletter {
       margin-bottom: 98px;
       top: 3rem;
